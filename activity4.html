@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Web Developer Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+            position: relative; /* Add relative position to the header */
+        }
+
+        .container {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            background-color: #333;
+            color: #fff;
+            width: 100px;
+            padding: 20px;
+            height :100vh;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 20px; /* Add vertical margin */
+            text-align: center;
+        }
+
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.9em;
+            display: block;
+            padding: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar ul li a::before {
+            position: relative;
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.9em;
+            display: block;
+            padding: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar ul li a:hover::before {
+            width: calc(100%-10px);
+            left: 5px;
+
+        }
+
+        .sidebar ul li a:hover {
+            background-color: #555;
+            border: 1px solid #fff;
+            border-radius: 2%;
+        }
+
+        /* Main Content Styles */
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        /* Contact Section */
+        #contact {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+
+        #contact .contact-icons {
+            font-size: 2em;
+        }
+
+        #contact .contact-icons a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        #contact .contact-icons a:hover {
+            color: #666;
+        }
+
+        /* Hide other sections by default */
+        #about, #skills, #projects {
+            display: none;
+        }
+
+        .my_image {
+            width: 100px;
+            height: 100px;
+        }
+
+        a{
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .phone, .mail {
+            width: 30px;
+            height: 30px;
+            margin-right: 7px;
+        }
+
+        /* Position the contact-icons container */
+        .contact-icons-container {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Sticky header class */
+        .sticky-header header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        /* CSS for click-to-enlarge effect */
+        #about img {
+            transition: transform 0.3s ease;
+        }
+
+        #about img.enlarged {
+            transform: scale(1.5); /* Adjust the scale factor as needed */
+            cursor: zoom-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Soham Kadam</h1>
+        <p>Web Developer Portfolio</p>
+        <!-- Wrap the icons in a container div -->
+        <div class="contact-icons-container">
+            <a href="tel:9023543565"><img class="phone" src="phone_icon.png" alt="Phone"></a>
+            <a href="mailto:sohamkadam1009@example.com"><img class="mail" src="mail_icon.png" alt="Email"></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Home Page Section -->
+            <section id="home">
+                <h2>Home</h2>
+                <!-- Add comprehensive information about yourself -->
+                <p>Hi, I am Soham Kadam, a devoted second-year BSc Computer Science student at Fergusson College, Pune, with a keen passion for web development. I'm enthusiastic about coding and love to bring my ideas to life through programming. I am currently pursuing my undergraduate degree in Computer Science at Fergusson College. Throughout my academic journey, I've developed a strong foundation in computer science concepts and practical implementation. I have a deep passion for coding and continuously strive to expand my knowledge in various programming languages. I enjoy the process of learning new languages and leveraging them to create beautiful and functional software. My primary goal is to
+                    I enjoy the process of learning new languages and leveraging them to create beautiful and functional software. My primary goal is to continue learning and growing as a software developer. I am excited about exploring new coding languages, frameworks, and technologies to enhance my skill set and contribute to the ever-evolving field of computer science.</p>
+                </section>
+    
+                <!-- About Me Section -->
+                <section id="about">
+                    <h2>About Me</h2>
+                    <!-- Add your detailed background, education, and professional experience -->
+                    <img class="my_image" src="SK.jpg">
+                    <h2>🖥 My Technical Skills :</h2>
+                    <h4>Languages :</h4>
+                    <h4>C, HTML, CSS, JavaScript</h4>
+                    <p>- Solid understanding of Computer Science Fundamentals.</p>
+                    <p>- Experienced in translating ideas into functional programs.</p>
+                    <p>- Strong problem-solving and analytical skills.</p>
+                    <p>- Ability to work collaboratively on diverse projects.</p>
+                    <p>- Continuous learner with a passion for staying updated on emerging technologies.</p>   
+                    <h2>📚 Certifications :</h2>
+                    <a href="https://coursera.org/share/8c02646f6b59a1d3ccdbc9029f8110b9">HTML, CSS, JavaScript</a>
+                    <a href="https://certificate.givemycertificate.com/c/08a425ef-7650-4e73-b5b7-c5d5aa9aca38">Cyber Security</a>
+                    <h2>📫 How to reach me :</h2>
+                    <a href="mailto:sohamkadam1009@gmail.com">sohamkadam1009@gmail.com</a>
+                    <!-- Add more details -->
+                </section>
+    
+                <!-- Skills Section -->
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <!-- Add more skills -->
+                    </ul>
+                </section>
+    
+                <!-- Projects Section -->
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <!-- Add descriptions and links to your projects -->
+                    <div class="project">
+                        <h3>Project 1</h3>
+                        <h5>Project Description</h5>
+                        <p> The Simple Music Player project is a basic web application that allows users to play, pause, and navigate through a list of audio tracks. The player features a clean and minimalistic design, making it easy to use and understand. It serves as an excellent project for beginners to learn about HTML, CSS, and JavaScript, and how these technologies can be combined to create functional web applications.</p>
+                        <a href="https://github.com/sohamkadam1009/My_Project/blob/main/project1.html">View Project</a>
+                    </div>
+                    <!-- Add more projects -->
+                </section>
+            </div>
+        </div>
+        <script>
+            // Function to show/hide sections based on sidebar clicks
+            function showSection(sectionId) {
+                // Hide all sections
+                document.querySelectorAll('section').forEach(section => {
+                    section.style.display = 'none';
+                });
+                // Show the selected section
+                document.getElementById(sectionId).style.display = 'block';
+            }
+    
+            // Event listeners for sidebar links
+            document.querySelectorAll('.sidebar a').forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent default anchor behavior
+                    showSection(this.getAttribute('href').substr(1)); // Show the corresponding section
+                });
+            });
+    
+            // Sticky Header
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                header.classList.toggle('sticky-header', window.scrollY > 0);
+            });
+    
+            // JavaScript for click-to-enlarge effect
+            document.querySelector('#about img').addEventListener('click', function() {
+                // Toggle a class to increase size
+                this.classList.toggle('enlarged');
+            });
+        </script>
+    </body>
+    </html>
+    
